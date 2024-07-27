@@ -1,3 +1,7 @@
+:root {
+    --background-color: rgb(195, 206, 178);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +10,7 @@ body {
 }
 
 nav {
-    background-color: rgb(65, 82, 35);
+    background-color: var(--background-color);
     color: black;
     height: 6vh;
     display: flex;
@@ -34,26 +38,42 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.content-container {
+.contentContainer {
     display: flex;
-    box-sizing: border-box;
-    border: 2px solid red;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* box-sizing: border-box;
+    border: 2px solid red; */
     height: 94vh;
 }
 
-section {
+#charts {
     overflow: hidden;
-    box-sizing: border-box;
-    /* border: 2px solid yellow; */
-    height: 100%;
-    width: 80vw;
+    height: 93vh;
+    width: 174vh;
+    background-color: var(--background-color);
+    border-top-right-radius: 2vh;
+    /* box-sizing: border-box;
+    border: 2px solid yellow; */
 }
 
-aside {
-    overflow: hidden;
-    box-sizing: border-box;
-    /* border: 2px solid yellow; */
+#watchlist {
     width: 20vw;
+    height: 93vh;
+    background-color: var(--background-color);
+    border-top-left-radius: 2vh;
+    box-sizing: border-box;
+    border: 2px solid yellow;
+}
+
+.watchlistData {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.lastPrice, .changePrice, .changePricePercent { 
+    /* box-sizing: border-box;
+    border: 2px solid green; */
 }
 
 footer {
