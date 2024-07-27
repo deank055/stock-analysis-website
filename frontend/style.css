@@ -8,14 +8,16 @@ body {
 nav {
     background-color: rgb(65, 82, 35);
     color: black;
+    height: 6vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
-    padding: 2vh;
     margin: 0;
     display: flex;
-    justify-content: left;
 }
 
 nav ul li {
@@ -25,20 +27,38 @@ nav ul li {
 nav ul li a {
     color: black;
     text-decoration: none;
-    padding: 1vh 1vw;
+    padding: 1vh;
 }
 
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-section {
+.content-container {
+    display: flex;
+    box-sizing: border-box;
     border: 2px solid red;
+    height: 94vh;
+}
+
+section {
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 80vw;
 }
 
 aside {
-    border: 2px solid red;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* border: 2px solid yellow; */
+    width: 20vw;
 }
 
 footer {
+    margin: 20vh 0;
+    background-color: rgb(65, 82, 35);
+    position: fixed;
+    /* border: 2px solid red; */
 }
