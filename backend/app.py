@@ -1,7 +1,7 @@
 import yfinance as yf
 from flask import request, render_template, Flask, jsonify
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__, template_folder='../frontend', static_folder='../frontend')
 
 @app.route('/')
 def index():
