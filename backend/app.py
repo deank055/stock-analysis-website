@@ -10,10 +10,13 @@ def index():
 @app.route('/stock_data', methods=['POST'])
 
 def stock_data():
-    ticker = request.get_json()['ticker ']
-    data = yf.Ticker(ticker).history(period='1y')
-    return jsonify({'currentPrice': data.iloc[-1].Close,
-                    'openPrice': data.iloc[-1].Open})
+    ticker = request.get_json()['ticker']
+    data = yf.Ticker(ticker).history(period='1d')
+    print(data)
+    return jsonify({
+        'currentPrice': data.iloc[-1].Close,
+        'openPrice': data.iloc[-1].Open,
+        'ticker': ticker})
 
 if __name__ == '__main__':
     app.run(debug=True)

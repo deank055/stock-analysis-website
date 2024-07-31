@@ -1,14 +1,15 @@
 :root {
-    --background-color: rgb(195, 206, 178);
+    --background-color: rgb(255, 255, 255);
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: darkolivegreen;
+    /* background-color: black; */
 }
 
+/* TOP BAR */
 nav {
     background-color: var(--background-color);
     color: black;
@@ -17,68 +18,74 @@ nav {
     justify-content: left;
     align-items: center;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
     display: flex;
 }
-
 nav ul li {
     margin: 0 1vw;
 }
-
 nav ul li a {
     color: black;
     text-decoration: none;
     padding: 1vh;
 }
-
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.contentContainer {
+/* MAIN CONTENT */
+.wrapper {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    /* box-sizing: border-box;
-    border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
     height: 94vh;
-}
-
-#charts {
-    overflow: hidden;
-    height: 93vh;
-    width: 174vh;
-    background-color: var(--background-color);
-    border-top-right-radius: 2vh;
-    /* box-sizing: border-box;
-    border: 2px solid yellow; */
-}
-
-#watchlist {
-    width: 20vw;
-    height: 93vh;
-    background-color: var(--background-color);
-    border-top-left-radius: 2vh;
+    width: 100vw;
+    border: 2px solid red;
     box-sizing: border-box;
+}
+#charts {
+    height: 100%;
+    width: 80%;
+    border: 2px solid orange;
+    box-sizing: border-box;
+}
+#watchlist {
+    height: 100%;
+    width: 20%;
+    border: 2px solid orange;
+    box-sizing: border-box;
+}
+#watchlist #header{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 10%;
     border: 2px solid yellow;
+    box-sizing: border-box;
 }
-
 .watchlistData {
+    height: 90%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
+    border: 2px solid yellow;
+    box-sizing: border-box;
+    justify-items: center; 
 }
 
-.lastPrice, .changePrice, .changePricePercent { 
-    /* box-sizing: border-box;
-    border: 2px solid green; */
-}
 
+/* FOOTER */
 footer {
-    margin: 20vh 0;
-    background-color: rgb(65, 82, 35);
-    position: fixed;
-    /* border: 2px solid red; */
+    color: black;
+    height: 3vh;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
