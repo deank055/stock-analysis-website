@@ -1,0 +1,120 @@
+#contentWrapper {
+    min-height: calc(100vh - 175px);
+}
+
+/* Watchlist Styles */
+#watchlist {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#header p {
+    font-size: 1.5rem;
+    margin: 0;
+    flex: 1;
+}
+
+#header .input-group {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+}
+
+#header input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+#header button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 0.5rem;
+}
+
+#header button:hover {
+    background-color: #575757;
+}
+
+.watchlistData {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.watchlistItem {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+    width: calc(33.333% - 3rem); /* Adjusted width to fit three cards in one row */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.watchlistItemData {
+    display: flex;
+    flex-direction: column;
+}
+
+.watchlistItemDataTicker,
+.watchlistItemDataPrice,
+.watchlistItemDataOpen,
+.watchlistItemDataChange {
+    margin: 0.5rem 0;
+}
+
+.watchlistItemControls {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.watchlistItemControlsRemove {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.watchlistItemControlsRemove:hover {
+    background-color: #c0392b;
+}
+
+.flash-grey {
+    background-color: rgb(194, 194, 194) !important;
+}
+.flash-green {
+    background-color: rgb(114, 255, 114) !important;
+}
+.flash-red {
+    background-color: rgb(255, 114, 114) !important;
+}

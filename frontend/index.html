@@ -1,58 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Analysis by Dean</title>
-    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="/frontend/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/frontend/script.js"></script>
+    <script src="/frontend/js/script.js"></script>
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Link 1</a></li>
-            <li><a href="contact.html">Link 2</a></li>
-            <li><a href="login.html">Link 3</a></li>
+            <li><a href="live.html">Live Display</a></li>
+            <li><a href="dip.html">Dip Finder</a></li>
         </ul>
     </nav>
     <div class="wrapper">
-        <section id="charts">
-            <h1>This segment contains all charts</h1>
-            <p>filler line</p>
-        </section>
-        <aside id="watchlist">
-            <div id="header">
-                <p>Watchlist<p>
-                <input type="text" id="stockInput" placeholder="Enter Stock Ticker">
-                <button id="newStock">Add Stock</button>
-            </div>
-            <div class="watchlistData">
-                <div class="ticker">
-                    <p>AAPL</p>
-                    <p>AAPL</p>
-                    <p>AAPL</p>
-                    <p>AAPL</p>
-                </div>
-                <div class="lastPrice">
-                    <p>100$</p>
-                    <p>100$</p>
-                    <p>100$</p>
-                    <p>100$</p>
-                </div>
-                <div class="changePrice">
-                    <p>5$</p>
-                    <p>5$</p>
-                    <p>5$</p>
-                    <p>5$</p>
-                </div>
-                <div class="changePricePercent">
-                    <p>5%</p>
-                    <p>5%</p>
-                    <p>5%</p>
-                    <p>5%</p>
-                </div>
-            </div>
-        </aside>
+        <!-- easy add and delete stock tickers function -->
+        <div class="input-group">
+            <input type="text" id="stockInput" placeholder="Enter Stock Ticker">
+            <button id="newStock">Add</button>
+            <button id="removeStock">Remove</button>
+        </div>
+        <ul id="stockList">
+            <!-- List of stocks will be dynamically added here -->
+        </ul>
+    </div>
+    <div class="wrapper">
+        <!-- add general market performance -->
+        <!-- indices, currencies, etc  -->
+    </div>
+    <div class="wrapper">
+        <!-- add a news feed -->
     </div>
     <footer>
         <p>2024 Simple Stock Analysis Webapp by Dean Kok</p>

@@ -1,0 +1,14 @@
+#dipfinderGraphWrapper {
+    width: 90%;
+    height: 25rem;
+    min-height: calc(100vh - 175px);
+    display: flex;
+    flex-direction: column; /* Added this line */
+    justify-content: center;
+    align-items: center;
+}
+
+#graph {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis by Dean</title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link rel="stylesheet" href="/frontend/css/live.css">
+    <script src="/frontend/js/script.js"></script>
+    <script src="/frontend/js/live.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="live.html">Live Display</a></li>
+            <li><a href="dip.html">Dip Finder</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper" id="contentWrapper">
+        <div id="watchlist">
+            <div id="header">
+                <p>Watchlist</p>
+                <div class="input-group">
+                    <input type="text" id="stockInput" placeholder="Enter Stock Ticker">
+                    <button id="newStock">Add</button>
+                    <button id="removeStock">Remove</button>
+                </div>
+            </div>
+            <div class="watchlistData"></div>
+        </div>
+    </div>
+    <footer>
+        <p>2024 Simple Stock Analysis Webapp by Dean Kok</p>
+    </footer>
+</body>
+</html>
